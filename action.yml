@@ -10,6 +10,6 @@ outputs:
     description: 'Fecha'
 runs:
   using: 'docker'
-  image: docker://820832395314.dkr.ecr.eu-central-1.amazonaws.com/test-action:latest
+  image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
