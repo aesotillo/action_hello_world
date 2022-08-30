@@ -10,10 +10,10 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v3
-        
+
       - name: Step Hola Mundo
         id: hello
-        uses: ./
+        uses: ./actions/hello/
         with:
           who-to-greet: "Alejandro"
 
