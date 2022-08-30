@@ -17,7 +17,7 @@ jobs:
         id: hello
         uses: ./.github/actions/hello/
         with:
-          name: ${FIRST_NAME}
+          name: ${{ env.FIRST_NAME }}
 
       - name: Usar el output
         run: echo "La fecha es ${{ steps.hello.outputs.time }}"
