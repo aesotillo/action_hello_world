@@ -10,7 +10,7 @@ jobs:
 
       - name: Step Hola Mundo
         id: hello
-        uses: aesotillo/action_hello_world@v2
+        uses: ./
         with:
           who-to-greet: "Alejandro"
 
