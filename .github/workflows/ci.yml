@@ -7,7 +7,7 @@ jobs:
     name: Un job para saludar
     runs-on: ubuntu-20.04
     env:
-      name: "pepito"
+      FIRST_NAME: "pepito"
     steps:
 
       - name: Checkout
@@ -16,8 +16,8 @@ jobs:
       - name: Step Hola Mundo
         id: hello
         uses: ./.github/actions/hello/
-        # with:
-        #   name: "pepito"
+        with:
+          name: ${FIRST_NAME}
 
       - name: Usar el output
         run: echo "La fecha es ${{ steps.hello.outputs.time }}"
