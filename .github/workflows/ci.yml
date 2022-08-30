@@ -13,7 +13,7 @@ jobs:
 
       - name: Step Hola Mundo
         id: hello
-        uses: ./actions/hello/
+        uses: ./.github/actions/hello/
         with:
           who-to-greet: "Alejandro"
 
