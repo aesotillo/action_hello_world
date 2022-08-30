@@ -1,15 +1,14 @@
 name: 'Hola Mundo'
 description: 'Saludar a alguien y guardar la fecha'
 inputs:
-  who-to-greet:
+  name:
     description: 'A quien saludar'
     required: true
-    default: 'Mundo'
 outputs:
   time:
     description: 'Fecha'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  # args:
+  #   - ${{ inputs.who-to-greet }}
